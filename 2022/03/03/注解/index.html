@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>Hexo</title>
+  <meta name="description" content="springmvc123456789101112@Controller : 代表这个类会被Spring接管					  被这个注解的类中所有方法，如果返回值是String，并且有具体页面可以跳转，那么就会被视图解析器解析 @RequestMapping(&quot;&#x2F;t3&quot;)：请求映射			@GetMapping：get方法			@PostMapping：post方法			@PutMap">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://blog.jiascu.top/2022/03/03/%E6%B3%A8%E8%A7%A3/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="springmvc123456789101112@Controller : 代表这个类会被Spring接管					  被这个注解的类中所有方法，如果返回值是String，并且有具体页面可以跳转，那么就会被视图解析器解析 @RequestMapping(&quot;&#x2F;t3&quot;)：请求映射			@GetMapping：get方法			@PostMapping：post方法			@PutMap">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-03-03T13:47:43.108Z">
+<meta property="article:modified_time" content="2021-11-09T02:52:40.314Z">
+<meta property="article:author" content="jia">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://blog.jiascu.top/2022/03/03/%E6%B3%A8%E8%A7%A3/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+  
+  
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+<body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/cofess" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">昵称</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Web Developer &amp; Designer</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shenzhen, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">Categories</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">Tags</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-repository">
+          <a href="/repository">
+            
+            <i class="icon icon-project"></i>
+            
+            <span class="menu-title">Repository</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-books">
+          <a href="/books">
+            
+            <i class="icon icon-book-fill"></i>
+            
+            <span class="menu-title">Books</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">Links</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">About</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/cofess" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="http://weibo.com/cofess" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://twitter.com/iwebued" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
+        
+        <li><a href="https://www.behance.net/cofess" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>欢迎交流与分享经验!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+
+    
+      
+
+    
+      
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a><span class="archive-list-count">5</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2022/03/03/IDEA%E8%B0%83%E8%AF%95%E6%8A%80%E5%B7%A7/" class="title">(no title)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-03-03T13:47:51.680Z" itemprop="datePublished">2022-03-03</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2022/03/03/else/" class="title">(no title)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-03-03T13:47:51.660Z" itemprop="datePublished">2022-03-03</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2022/03/03/%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="title">(no title)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-03-03T13:47:51.624Z" itemprop="datePublished">2022-03-03</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2022/03/03/%E6%B3%A8%E8%A7%A3/" class="title">(no title)</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-03-03T13:47:43.108Z" itemprop="datePublished">2022-03-03</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2022/03/03/hello-world/" class="title">Hello World</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-03-03T12:52:23.253Z" itemprop="datePublished">2022-03-03</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-注解" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/03/03/%E6%B3%A8%E8%A7%A3/" class="article-date">
+	  <time datetime="2022-03-03T13:47:43.108Z" itemprop="datePublished">2022-03-03</time>
+	</a>
+</span>
+        
+        
+
+        
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/03/03/%E6%B3%A8%E8%A7%A3/#comments" class="article-comment-link">Comments</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="springmvc"><a href="#springmvc" class="headerlink" title="springmvc"></a>springmvc</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Controller</span> : 代表这个类会被Spring接管</span><br><span class="line">					  被这个注解的类中所有方法，如果返回值是String，并且有具体页面可以跳转，那么就会被视图解析器解析 <span class="meta">@RequestMapping(&quot;/t3&quot;)</span>：请求映射</span><br><span class="line">			<span class="meta">@GetMapping</span>：get方法</span><br><span class="line">			<span class="meta">@PostMapping</span>：post方法</span><br><span class="line">			<span class="meta">@PutMapping</span></span><br><span class="line">			<span class="meta">@DeleteMapping</span></span><br><span class="line">			<span class="meta">@PatchMapping</span></span><br><span class="line"><span class="meta">@PathVariable</span> : 让方法参数的值对应绑到一个URL模板变量上</span><br><span class="line"><span class="meta">@RequestParam(&quot;username&quot;)</span>：前端请求的参数名</span><br><span class="line"></span><br><span class="line"><span class="meta">@ResponseBody</span><span class="comment">//它不会走视图解析器。会直接返回一个字符串</span></span><br><span class="line"><span class="meta">@RestController</span>：<span class="meta">@Controller</span> + <span class="meta">@ResponseBody</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="spring"><a href="#spring" class="headerlink" title="spring"></a>spring</h1><ul>
+<li><p>@Autowired：自动注入，首先按类型注入，如果只有一个则成功；如果是多个，再按照名称（类首字母小写）注入，找到了成功，否则失败</p>
+</li>
+<li><p>@Qualifier：@Autowired是根据类型自动装配的，加上@Qualifier则可以根据byName的方式自动装配</p>
+</li>
+<li><p>@Resource：自动装配通过名字、类型，使用时需先导包</p>
+</li>
+<li><p>@Nullable：标记字段，说明该字段可以为null</p>
+</li>
+<li><p>bean注入：放在类上，说明这个类被Spring管理了，就是bean</p>
+<p>​                  相当于：<bean class="com.kuang.pojo.User" id="user"/></p>
+<ul>
+<li><p>@Component：组件，放在pojo（实体类上）</p>
+</li>
+<li><p>@Controller：web层 </p>
+</li>
+<li><p>@Service：service层 </p>
+</li>
+<li><p>@Repository：dao层</p>
+</li>
+</ul>
+</li>
+<li><p>@value：属性注入，可在定义变量上方和set方法上方注入，表示为该属性赋值</p>
+<p>​                相当于：<property name="name" value="狂神"/></p>
+</li>
+<li><p>@scope：作用域，包括singleton和prototype等</p>
+<ul>
+<li><pre><code>        singleton：默认的，Spring会采用单例模式创建这个对象。关闭工厂 ，所有的对象都会销毁。 
+</code></pre>
+</li>
+<li><pre><code>        prototype：多例模式。关闭工厂 ，所有的对象不会销毁。内部的垃圾回收机制会回收
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>@Configuration:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//这个也会被Spring容器托管，注册到容器中，因为他本身就是一个@Component，</span></span><br><span class="line"><span class="comment">// @Configuration代表这是一个配置类 ，就和我们之前看到的beans.xml</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>@Import(KuangConfig2.class)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">导入别的配置文件（使用了注解<span class="meta">@Configuration</span>:）</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>@ComponentScan(“com.kuang”)</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//扫描组件，相当于xml文件中的  </span><br><span class="line"><span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">&quot;com.kuang&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>@Bean:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//注册一个Bean，就像但与我们之前写的一个bean标签</span></span><br><span class="line"><span class="comment">//这个方法的名字，就相当于bean标签中的id属性</span></span><br><span class="line"><span class="comment">//这个方法的返回值，就相当于bean标签中的class属性</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="springboot"><a href="#springboot" class="headerlink" title="springboot"></a>springboot</h1><ul>
+<li><pre><code class="java">@ConfigurationProperties(prefix = &quot;person&quot;)
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  将配置文件中配置的每一个属性的值，映射到这个组件中； </span><br><span class="line"></span><br><span class="line">  告诉SpringBoot将本类中的所有属性和配置文件中相关的配置进行绑定 参数 prefix = “person” : </span><br><span class="line"></span><br><span class="line">  将配置文件中的person下面的所有属性一一对应</span><br><span class="line"></span><br><span class="line">- ```java</span><br><span class="line">  @Validated //数据校验</span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><pre><code class="java">@Email(message=&quot;邮箱格式错误&quot;)
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  配合@Validated使用，在字段上使用，要求其必须为邮件格式，否则报错（邮箱格式错误）</span><br><span class="line"></span><br><span class="line">- jsr303检验</span><br><span class="line"></span><br><span class="line">  ```java</span><br><span class="line">  @NotNull(message=&quot;名字不能为空&quot;)</span><br><span class="line">  private String userName;get</span><br><span class="line">  @Max(value=120,message=&quot;年龄最大不能查过120&quot;)</span><br><span class="line">  private int age;</span><br><span class="line">  @Email(message=&quot;邮箱格式错误&quot;)</span><br><span class="line">  private String email;</span><br><span class="line">  </span><br><span class="line">  空检查</span><br><span class="line">  @Null       验证对象是否为null</span><br><span class="line">  @NotNull    验证对象是否不为null, 无法查检长度为0的字符串</span><br><span class="line">  @NotBlank   检查约束字符串是不是Null还有被Trim的长度是否大于0,只对字符串,且会去掉前后空格.</span><br><span class="line">  @NotEmpty   检查约束元素是否为NULL或者是EMPTY.</span><br><span class="line">      </span><br><span class="line">  Booelan检查</span><br><span class="line">  @AssertTrue     验证 Boolean 对象是否为 true  </span><br><span class="line">  @AssertFalse    验证 Boolean 对象是否为 false  </span><br><span class="line">      </span><br><span class="line">  长度检查</span><br><span class="line">  @Size(min=, max=) 验证对象（Array,Collection,Map,String）长度是否在给定的范围之内  </span><br><span class="line">  @Length(min=, max=) string is between min and max included.</span><br><span class="line">  </span><br><span class="line">  日期检查</span><br><span class="line">  @Past       验证 Date 和 Calendar 对象是否在当前时间之前  </span><br><span class="line">  @Future     验证 Date 和 Calendar 对象是否在当前时间之后  </span><br><span class="line">  @Pattern(value)    验证 String 对象是否符合正则表达式的规则</span><br><span class="line">  </span><br></pre></td></tr></table></figure>
+</code></pre>
+</li>
+<li><pre><code class="java">@Repository  
+</code></pre>
+</li>
+</ul>
+<h1 id="else"><a href="#else" class="headerlink" title="else"></a>else</h1><ol>
+<li>实现异步<ul>
+<li>@Async：在方法上加，告诉spring这是一个异步的方法</li>
+<li>@EnableAsync：在SpringbootApplication上面加，开启异步注解功能</li>
+</ul>
+</li>
+<li>定时执行任务<ul>
+<li>@Scheduled（）：在方法上加，使用cron表达式</li>
+<li>cron表达式：<ul>
+<li>秒 分 时 日 月 周几</li>
+<li>@Scheduled(cron &#x3D; “0 * * * * 0-7”)：每天任何时候的第0秒</li>
+<li>可在线生成</li>
+</ul>
+</li>
+<li>@EnableScheduling：在SpringbootApplication上面加，开启定时功能的注解</li>
+</ul>
+</li>
+</ol>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://blog.jiascu.top/2022/03/03/%E6%B3%A8%E8%A7%A3/" title="" target="_blank" rel="external">https://blog.jiascu.top/2022/03/03/注解/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/cofess" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/cofess" target="_blank"><span class="text-dark">昵称</span><small class="ml-1x">Web Developer &amp; Designer</small></a></h3>
+        <div>个人简介。</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2022/03/03/%E5%BF%AB%E6%8D%B7%E9%94%AE/" title="(no title)"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2022/03/03/hello-world/" title="Hello World"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>$</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>Maybe you could buy me a cup of coffee.</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/alipayimg.png" alt="Scan Qrcode" title="Scan" />
+              </div>
+              <p class="text-muted mv">Scan this qrcode</p>
+              <p class="text-grey">Open alipay app scan this qrcode, buy me a coffee!</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatpayimg.png" alt="Scan Qrcode" title="Scan" />
+              </div>
+              <p class="text-muted mv">Scan this qrcode</p>
+              <p class="text-grey">Open wechat app scan this qrcode, buy me a coffee!</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> alipay</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> wechat payment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/cofess" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="http://weibo.com/cofess" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://twitter.com/iwebued" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
+        
+        <li><a href="https://www.behance.net/cofess" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
+        
+        <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+
+   
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: '',
+    appKey: '',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
+
+
+
+
+
+
+
+</body>
+</html>
